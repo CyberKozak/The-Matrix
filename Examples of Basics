@@ -1,0 +1,138 @@
+#!/bin/python3
+
+#Variables and Methods
+quote = "Study to show thyself approved."
+print(quote.upper()) #uppercase
+print(quote.lower()) #lowercose
+print(quote.title()) #title case
+
+print(len(quote))
+
+
+name = "Kozak" #string
+age = "38" #int
+gpa = 2.0 #float
+
+print(int(age))
+print(int(38.1))
+print("My name is " + name + " and I am " + str(age) + " years old.")
+
+def who_am_i(): # this is a function
+	name = "Kozak"
+	age = 38
+	print("My name is " + name + " and I am " + str(age) + " years old.")
+	
+who_am_i()
+
+#adding parameters
+def add_one_hundred(num):
+	print(num + 100)
+	
+add_one_hundred(100)
+
+#multiple parameters
+
+def add(x,y):
+	print(x + y)
+
+add(7,7)
+
+def multiply(x,y):
+	return x * y
+
+multiply(7,7)
+
+print(multiply(7,7))
+
+def square_root(x):
+	print(x ** .5)
+	
+square_root(64)
+
+def nl():
+	print('\n')
+(nl)
+
+#boolean expressions (true or false)
+print("Boolean expressions:")
+
+bool1 = True
+bool2 = 3*3 == 9
+bool3 = False
+bool4 = 3*3 != 9
+
+print(bool1,bool2,bool3,bool4)
+print (type(bool1))
+
+nl()
+
+#Relation operators/Boolean Operators
+
+nl()
+#Conditional Statements
+def drink(money):
+	if money >= 2:
+		return "You've got yoruself a drink!"
+	else:
+		return "No drink for you!"
+
+print(drink(3))
+print(drink(1))
+
+def alcohol(age,money):
+	if (age >= 21) and (money >= 5):
+		return "We're getting a drink!"
+	elif(age >= 21) and (money < 5):
+		return "come back with more money."
+	elif(age < 21) and (money >= 5):
+		return "Nice true, kid!"
+	else:
+		return "Your're too poor and too young"
+
+print(alcohol(21,5))
+print(alcohol(21,4))
+print(alcohol(20,4))
+
+nl
+
+#lists  - Have brackets like this []
+movies = ["The Matrix", "Hitchhikers Guide to the Galexy", "Aliens 2", "The Dark Tower"]
+
+print(movies[1]) #returns the second item (Because 0 is our Hero).
+print(movies[0]) #Returns the first item in the list, 1-4 should be 0,[1],2,3,4 <--Correct syntax.
+print(movies[0:4])
+print(movies[1:])
+print(movies[:2])
+print(movies [-1])
+
+print(len(movies))
+movies.append("JAWS")
+print(movies)
+
+movies.pop() #Deletes there very last item on a list.
+print(movies)
+movies.pop(0) #Removies the very first item in the list.  Quick way to remove.
+
+#mutaable means changed. Tuples are imutable.  They do not change. () <-----TUPLES
+grades = ("a", "b", "c", "d", "f")
+print(grades[1])
+
+nl()
+
+#Looping
+
+#For Loops - (start to finish of a iterate)
+vegetables = ["cucumber", "spinach", "yams", "beats", "cabbage"]
+for x in vegetables:
+	print(x)
+
+#while loops - execute as long as ture.  It will only work if the system is true.
+
+i = 1
+while i < 10:
+	print(i)
+	i += 1
+#very importnat to remember for loop is a iterate, and while loop will only execute if the factors are true.
+
+nl()
+
