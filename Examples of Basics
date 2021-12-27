@@ -11,7 +11,7 @@ print(len(quote))
 
 name = "Kozak" #string
 age = "38" #int
-gpa = 2.0 #float
+gpa = 3.0 #float
 
 print(int(age))
 print(int(38.1))
