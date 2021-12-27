@@ -1,0 +1,71 @@
+#!/bin/python3
+import sys # System functions and parameters
+import os
+from datetime import datetime as dt
+print(sys.version)
+print(dt.now())
+# argv - $1 < arguments
+def nl():
+	print('\n')
+
+nl()
+
+my_name = "Kozak"
+print(my_name[0])
+print(my_name[-1])
+
+sentence = "The Lord Most High Reigns"
+print(sentence)
+print(sentence[:4])
+print(len(sentence))
+print(sentence.split())
+
+sentence_split = sentence.split()
+sentence_join = ' '.join(sentence_split)
+print(sentence_join)
+quote = "The Lord is One!, 'Serve him'" #Character Escaping Important syntax for escaping quotes.
+print(quote)
+quote = "The Lord is One!, \"Serve him\"" #Character Escaping
+print(quote)
+
+too_much_space = "                  Apocolypse                   "
+print(too_much_space.strip())
+
+print("A" in "Apple")
+
+letter = "A"
+word = "Apocolypse"
+print(letter.lower() in word.lower())  #this is the improved way to extract data.
+print(letter.upper() in word.upper())  #this is the improved way to extract data.
+movie = "The Matrix"
+print("My favorite movie is {}.".format(movie)) # {} = Placeholder brackets very important which will attach the movie imput
+
+nl()
+#This is my second day of learning coding from TCM Academey.
+# Remember lists and str = always start with 0 to get things right.
+
+#Dictionaries - key/value pairs {} Very important section.
+#Menu
+
+drinks = {"Grape Juice": 3.7, "Water": 1, "Wine": 7} #Drink is the KEY, the price is teh VALUE
+print(drinks)
+
+employees = {"Finance": ["Angela", "Kevin", "CIA Agent"], "IT": ["Kozak", "Enoch", "Evelyn"], "HR": ["Josh", "Jake"]}
+print(employees)
+
+employees['Legal'] = ["Mr. Gadget"] #Adding a new Key:Value is very important to data STR.  
+print(employees)
+
+employees.update({"Sales": ["Douge", "Randy"]})
+print(employees)
+
+drinks['Grape Juice'] = 7.4
+print(drinks)
+
+print(drinks.get("Grape Juice")) 
+
+#Sockets, what they are and how they connect nodes together.  For port scanners as an example.
+
+nl()
+
+
